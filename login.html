@@ -19,8 +19,29 @@
     <div class="titleBox"></div>
     <!-- 4.2登录区域 -->
     <div class="login-box">
-        <h1>111</h1>
-        <a href="javascript:;" id="link_reg">去注册</a>
+        <!-- 登陆表单 -->
+        <form class="layui-form" action="">
+            <!-- 用户名 -->
+            <div class="layui-form-item">
+                <input type="text" name="username" required lay-verify="required" placeholder="请输入用户名"
+                    autocomplete="off" class="layui-input">
+            </div>
+            <!-- 密码 -->
+            <div class="layui-form-item">
+                <input type="password" name="password" required lay-verify="required" placeholder="请输入密码"
+                    autocomplete="off" class="layui-input">
+            </div>
+            <!-- 登陆按钮 -->
+            <div class="layui-form-item">
+                <!-- 必须加submit，后期绑定submit事件需要 -->
+                <button class="layui-btn layui-btn-fluid layui-btn-normal" lay-submit>登录</button>
+            </div>
+            <!-- 注册 -->
+            <div class="layui-form-item links">
+                <a href="javascript:;" id="link_reg">去注册</a>
+            </div>
+        </form>
+
     </div>
     <!-- 4.3注册区域 -->
     <div class="reg-box" style="display: none;">
